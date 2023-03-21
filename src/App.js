@@ -38,7 +38,7 @@ export default class App extends Component {
         <Router>
           <Navbar/>
           <LoadingBar
-            color='#f11946'
+            color='#3500ff'
             progress={this.state.progress}
             waitingTime={1000}
             loaderSpeed={50}
