@@ -10,9 +10,11 @@ export class NewsItem extends Component {
     return (
       <div className='my-3'>
         <div className="card">
-          <div style={{display: "flex", 
+          <div 
+              style={{display: "flex", 
               position: "absolute",
               right: "0"}}>
+                
             <span className="badge rounded-pill bg-success">{source.name}</span>
           </div>
           <img src={imageUrl?imageUrl:"https://img.freepik.com/free-vector blue-futuristic-networking-technology_53876-100679.jpg"} className="card-img-top" alt="..."/>

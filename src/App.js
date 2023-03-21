@@ -13,8 +13,11 @@ import {
 
 export default class App extends Component {
   // c = "Hero"
-  apiKey2 = "0073dba0dd5a486c9dcbf5c025e7fa33";
+  // apiKey2 = "0073dba0dd5a486c9dcbf5c025e7fa33";
   // apiKey2 = "dbde531df1144f1aa606fb2b8254b803";
+
+  apiKey2 = process.env.REACT_APP_NEWS_API;
+
   pageSize = 12;
 
   state = {
