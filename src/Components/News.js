@@ -43,6 +43,7 @@ export class News extends Component {
 
   async componentDidMount()
   {
+    this.props.setProgress(10);
     // console.log("mounted")
     let pageSize = this.props.pageSize;
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
@@ -53,7 +54,11 @@ export class News extends Component {
 
     let data = await fetch(url);
 
+    this.props.setProgress(30);
+
     let parsedData = await data.json()
+
+    this.props.setProgress(50);
     // console.log(parsedData);
     let totalResults = parsedData.totalResults;
     
@@ -69,6 +74,8 @@ export class News extends Component {
       pageSize: pageSize,
       loading: false
     })
+
+    this.props.setProgress(100);
   } 
 
   // async updateNews()
@@ -147,6 +154,8 @@ export class News extends Component {
 
     // The fetchMoreData function uses setState, which is asynchronous. So, we will use a call back function in setState, so that our state gets changed synchronously.
 
+    this.props.setProgress(10);
+
     this.setState({
       page: this.state.page+1
     }, async () => {
@@ -155,7 +164,11 @@ export class News extends Component {
     
       let data = await fetch(url);
 
+      this.props.setProgress(30);
+
       let parsedData = await data.json();
+
+      this.props.setProgress(70);
 
       this.setState({
         articles: this.state.articles.concat(parsedData.articles),
@@ -164,6 +177,8 @@ export class News extends Component {
       })
 
     })
+
+    this.props.setProgress(100);
 
   };
   
