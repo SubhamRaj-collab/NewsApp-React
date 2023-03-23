@@ -1,3 +1,65 @@
+// 20230323183200
+// https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=f7f556d6025c4617b60af1f71fd7d09f&page=1&pageSize=4
+
+{
+  "status": "ok",
+  "totalResults": 69,
+  "articles": [
+    {
+      "source": {
+        "id": "independent",
+        "name": "Independent"
+      },
+      "author": "Andrea Blanco",
+      "title": "Gwyneth Paltrow trial – live: Star may testify today about ski collision as she claims video 'disappeared' - The Independent",
+      "description": "Goop founder faces civil lawsuit regarding 2016 skiing accident involving retired optometrist Terry Sanderson at Deer Valley resort",
+      "url": "https://www.independent.co.uk/news/world/americas/gwyneth-paltrow-ski-trial-kids-brad-b2305628.html",
+      "urlToImage": "https://static.independent.co.uk/2023/03/21/15/terry%20sanderson%20gwyneth%20paltrow.jpg?quality=75&width=1200&auto=webp",
+      "publishedAt": "2023-03-22T12:00:00Z",
+      "content": "Sign up to our Evening Headlines email for your daily guide to the latest news\r\nSign up to our free US Evening Headlines email\r\nActor Gwyneth Paltrow could take the stand today to testify in her civi… [+7039 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Entertainment Tonight"
+      },
+      "author": "Rachel McRady",
+      "title": "'American Idol' Contestant Calls Out Katy Perry for 'Mom Shaming' Joke - Entertainment Tonight",
+      "description": "Sarah Beth is a young mother of three who progressed onto Hollywood after her audition.",
+      "url": "https://www.etonline.com/american-idol-contestant-calls-out-katy-perry-for-mom-shaming-joke-it-was-embarrassing-and-hurtful",
+      "urlToImage": "https://www.etonline.com/sites/default/files/styles/max_1280x720/public/images/2023-03/sarah-katy.png?h=c673cd1c&itok=E0mXDDSu",
+      "publishedAt": "2023-03-22T11:18:23Z",
+      "content": "One American Idol contestant is reflecting on an awkward moment with judge Katy Perry during her audition. Earlier this month, 25-year-old mother of three Sarah Beth was featured on the music competi… [+2179 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Dave Simpson",
+      "title": "900 hours at the piano! Designing Elton John's final tour – in pictures - The Guardian",
+      "description": "The UK leg of the Farewell Yellow Brick Road tour begins on 23 March. Ray Winkler from the team behind the show’s stage design reveals the many years of planning for the pop legend’s big swan song",
+      "url": "https://www.theguardian.com/music/gallery/2023/mar/22/designing-elton-john-final-tour-farewell-yellow-brick-road-in-pictures",
+      "urlToImage": "https://i.guim.co.uk/img/media/0573d4e3827ca3770ae0cee64e75945d3f2f34ab/134_0_2318_1391/master/2318.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ac94aa1113059344fe5af88dfdfefc68",
+      "publishedAt": "2023-03-22T10:39:51Z",
+      "content": "The UK leg of the Farewell Yellow Brick Road tour begins on 23 March. Ray Winkler from the team behind the shows stage design reveals the many years of planning for the pop legends big swan song"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Greg Norman",
+      "title": "Dick Van Dyke involved in single-car accident in California - Fox News",
+      "description": "Actor Dick Van Dyke, 97, was involved last Wednesday in a single-vehicle accident in Malibu, California, police say.",
+      "url": "https://www.foxnews.com/entertainment/dick-van-dyke-single-car-accident-california-report",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2023/03/Dick-Van-Dyke.jpg",
+      "publishedAt": "2023-03-22T10:24:37Z",
+      "content": "Dick Van Dyke suffered minor injuries last Wednesday morning after becoming involved in a single-car crash in Malibu, California, police say.   \r\nLaw enforcement sources told TMZ that the 97-year-old… [+2074 chars]"
+    }
+  ]
+}
+
 <Route path="/business"><News pageSize={12} apiKey = {this.apiKey2} country="us" category="general"/></Route>
 <Route path="/entertainment"><News pageSize={12} apiKey = {this.apiKey2} country="us" category="general"/></Route>
 <Route path="/health"><News pageSize={12} apiKey = {this.apiKey2} country="us" category="general"/></Route>

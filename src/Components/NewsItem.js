@@ -1,21 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
+const NewsItem = (props) => {
 
-  render() {
-
-    let {title, description, imageUrl, newsUrl, author, date, source} = this.props;
+    let {title, description, imageUrl, newsUrl, author, date, source} = props;
     // Destructuring
 
     return (
       <div className='my-3'>
         <div className="card">
           <div 
-              style={{display: "flex", 
+              style={{display: "flex",
               position: "absolute",
-              right: "0"}}>
-                
-            <span className="badge rounded-pill bg-success">{source.name}</span>
+              right: "0"}}>  
+            <span className="badge rounded-pill bg-success">{source}</span>
           </div>
           <img src={imageUrl?imageUrl:"https://img.freepik.com/free-vector blue-futuristic-networking-technology_53876-100679.jpg"} className="card-img-top" alt="..."/>
           <div className="card-body">
@@ -27,7 +24,7 @@ export class NewsItem extends Component {
         </div>
       </div>
     )
-  }
+
 }
 
 export default NewsItem
