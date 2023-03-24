@@ -116,7 +116,7 @@ News.defaultProps = {
 
 News.propTypes = {
   pageSize: PropTypes.number,
-  number: PropTypes.string,
+  country: PropTypes.string,
   category: PropTypes.string
 }
 
